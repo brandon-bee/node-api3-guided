@@ -4,11 +4,7 @@ const hubsRouter = require('./hubs/hubs-router.js');
 
 const server = express();
 
-// server.use(express.json());
-server.use((req, res, next) => {
-  console.log(req);
-  next();
-});
+server.use(express.json());
 
 server.use('/api/hubs', hubsRouter);
 
