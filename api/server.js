@@ -6,7 +6,7 @@ const server = express();
 
 // server.use(express.json());
 server.use((req, res, next) => {
-  console.log(req.body);
+  console.log(req);
   next();
 });
 
